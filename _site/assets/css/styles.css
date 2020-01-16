@@ -1,3 +1,9 @@
-.current { color: green; }
+.nav { background-color: #333333; overflow: hidden; }
+
+.nav a { float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; }
+
+.nav a:hover { background-color: #dddddd; color: black; }
+
+.nav a.current { background-color: #4CAF50; color: white; }
 
 /*# sourceMappingURL=styles.css.map */

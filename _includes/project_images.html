@@ -1,0 +1,7 @@
+<div class="images">
+    {% assign project = site.data.projectImages[page.shortname] %}
+    {% for image in project.images %}
+        <p>{{ image.file }}</p>
+        <p>{{ image.text }}</p>
+    {% endfor %}
+</div>

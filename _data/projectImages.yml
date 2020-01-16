@@ -1,0 +1,56 @@
+2DGraphics:
+  images:
+    - file: Example File 1
+      text: Example Text 1
+    - file: Example File 2
+      text: Example Text 2
+    - file: Example File 3
+      text: Example Text 3
+3DGraphicsP1:
+  images:
+    - file: Example File 4
+      text: Example Text 4
+    - file: Example File 5
+      text: Example Text 5
+    - file: Example File 6
+      text: Example Text 6
+3DGraphicsP2:
+  images:
+    - file: Example File 7
+      text: Example Text 7
+    - file: Example File 8
+      text: Example Text 8
+    - file: Example File 9
+      text: Example Text 9
+GamesArchitecture:
+  images:
+    - file: Example File 10
+      text: Example Text 10
+    - file: Example File 11
+      text: Example Text 11
+    - file: Example File 12
+      text: Example Text 12
+HonoursStageProject:
+  images:
+    - file: Example File 13
+      text: Example Text 13
+    - file: Example File 14
+      text: Example Text 14
+    - file: Example File 15
+      text: Example Text 15
+RealTimeGraphics:
+  images:
+    - file: Example File 16
+      text: Example Text 16
+    - file: Example File 17
+      text: Example Text 17
+    - file: Example File 18
+      text: Example Text 18
+Simulation:
+  images:
+    - file: Example File 19
+      text: Example Text 19
+    - file: Example File 20
+      text: Example Text 20
+    - file: Example File 21
+      text: Example Text 21
