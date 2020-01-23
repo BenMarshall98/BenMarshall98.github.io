@@ -1,7 +1,11 @@
+{% assign project = site.data.projectImages[page.shortname] %}
+{% for image in project.images %}
 <div class="images">
-    {% assign project = site.data.projectImages[page.shortname] %}
-    {% for image in project.images %}
-        <p>{{ image.file }}</p>
+    <img src="{{ image.file }}" onerror="this.onerror=null;this.src = {{site.baseurl}}'/assets/images/default_image.png';" width="200" height ="200">
+    <div>
+        <p class="title">{{ image.title }}</p>
         <p>{{ image.text }}</p>
-    {% endfor %}
+    </div>
 </div>
+<hr>
+{% endfor %}

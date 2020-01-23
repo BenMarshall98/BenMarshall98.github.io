@@ -1,27 +1,36 @@
 2DGraphics:
   images:
-    - file: Example File 1
+    - file: /assets/images/default_image.png
       text: Example Text 1
+      title: Example Title 1
     - file: Example File 2
       text: Example Text 2
+      title: Example Title 2
     - file: Example File 3
       text: Example Text 3
+      title: Example Title 3
 3DGraphicsP1:
   images:
     - file: Example File 4
       text: Example Text 4
+      title: Example Title 4
     - file: Example File 5
       text: Example Text 5
+      title: Example Title 5
     - file: Example File 6
       text: Example Text 6
+      title: Example Title 6
 3DGraphicsP2:
   images:
     - file: Example File 7
       text: Example Text 7
+      title: Example Title 7
     - file: Example File 8
       text: Example Text 8
+      title: Example Title 8
     - file: Example File 9
       text: Example Text 9
+      title: Example Title 9
 GamesArchitecture:
   images:
     - file: Example File 10
