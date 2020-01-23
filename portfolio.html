@@ -4,11 +4,13 @@ title: Projects
 ---
 <h1>Projects</h1>
 
-<ul>
-    {% for author in site.projects %}
-        <li>
-            <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
-            <p>{{ author.content | markdownify }}</p>
-        </li>
-    {% endfor %}
-</ul>
+{% for project in site.projects %}
+    <div class="images">
+        <img src="{{ project.image }}" onerror="this.onerror=null;this.src = {{site.baseurl}}'/assets/images/default_image.png';" width="200" height ="200">
+        <div>
+            <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
+            <p>{{ project.shortcontent | markdownify }}</p>
+        </div>
+    </div>
+    <hr>
+{% endfor %}
