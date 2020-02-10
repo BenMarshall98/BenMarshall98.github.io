@@ -1,23 +1,4 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="tf-8">
-        <title>Games_architecture</title>
-        <link rel="stylesheet" href=/assets/css/styles.css>
-    </head>
-    <body>
-        <div class="nav">
-    
-        <a href="/" >Home</a>
-    
-        <a href="/about.html" >About</a>
-    
-        <a href="/portfolio.html" >Portfolio</a>
-    
-</div>
-        <h1 id="projectTitle">Games Architecture</h1>
-<div id="content">
-    <p>The aim for the coursework for this module was to develop a game engine based around Entity - Component - System (ECS) architecture, then use the game engine to build a 3D pacman game.</p>
+I"�<p>The aim for the coursework for this module was to develop a game engine based around Entity - Component - System (ECS) architecture, then use the game engine to build a 3D pacman game.</p>
 
 <p>From a graphics point of view, this coursework was relatively easy with only a simple HUD, texture objects and a skybox required. I decided to use this coursework to help practice my knowledge from the 3D Graphics module, on top of the required graphics techniques I decided to add Phong lighting to the game and add a minimap of the ‘maze’ to the HUD. At the start of the module I did want to have a go at implementing shadows for this coursework, however by the time I had the core features done, plus a couple of extra features done, I did not have enough time to implement shadows and get it tested.</p>
 
@@ -30,41 +11,4 @@
 <p>Of all the components / systems in the game the most challenging to write was the artificial intelligence for the ghosts. Each of the ghosts used A* algorithm to build paths to find the player Most of the problems that I had with the AI was with the ghosts moving into walls, leading to the ghost getting stuck until the player moved to a location that caused the algorithm to build a different path. From the start the maze was designed to be 3 units wide, with the ghosts / pacman being 1 unit wide, mainly to prevent collision detection from stopping movement around the board. This proved useful for the AI, the implemented AI was locked to the middle of the path, unless the player was very close to the ghost.</p>
 
 <p>Normally the A* algorithm is good at dealing with concave areas in the map, however whenever the ghost went into a concave area the game would freeze, while unsuccessfully trying to calculate a way out. I believe part of the issue was due to the algorithm trying the same path multiple times, at the time I decided to rewrite most of the AI making sure to include some way of preventing the same path to be taking multiple times, which did seem to resolve the issue.</p>
-
-    <h2 id="title">Gallery</h2>
-    
-
-<div class="images">
-    <img src="Example File 10" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="200" height ="200">
-    <div>
-        <p class="title"></p>
-        <p>Example Text 10</p>
-    </div>
-</div>
-<hr>
-
-<div class="images">
-    <img src="Example File 11" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="200" height ="200">
-    <div>
-        <p class="title"></p>
-        <p>Example Text 11</p>
-    </div>
-</div>
-<hr>
-
-<div class="images">
-    <img src="Example File 12" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="200" height ="200">
-    <div>
-        <p class="title"></p>
-        <p>Example Text 12</p>
-    </div>
-</div>
-<hr>
-
-
-    <h2 id="video">Video</h2>
-</div>
-
-
-    </body>
-</html>
+:ET

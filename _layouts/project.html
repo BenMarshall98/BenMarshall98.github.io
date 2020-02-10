@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
-<h1>{{ page.name }}</h1>
-{{ content }}
-{% include project_images.html %}
+<h1 id="projectTitle">{{ page.name }}</h1>
+<div id="content">
+    {{ content }}
+    <h2 id="title">Gallery</h2>
+    {% include project_images.html %}
+    <h2 id="video">Video</h2>
+</div>
+
