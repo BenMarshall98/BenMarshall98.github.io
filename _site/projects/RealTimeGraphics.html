@@ -19,6 +19,7 @@
 <div id="content">
     <p>The project details for Real Time Graphics.</p>
 
+    <hr>
     <h2 id="title">Gallery</h2>
     <style>
     body {
@@ -99,16 +100,17 @@
       color: white;
     }
     
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
+    .row {
+      background-color: #333;
+      overflow: auto;
+      white-space: nowrap;
+      text-align: center;
     }
     
     /* Six columns side by side */
     .column {
-      float: left;
-      width: 16.66%;
+      display: inline-block;
+      padding: 10px;
     }
     
     /* Add a transparency effect for thumnbail images */
@@ -151,15 +153,15 @@
   <div class="row">
     
       <div class="column">
-        <img class="demo cursor" src="Example File 16" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="100" onclick="currentSlide(1)" alt="">
+        <img class="demo cursor" src="Example File 16" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(1)" alt="">
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="Example File 17" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="100" onclick="currentSlide(2)" alt="">
+        <img class="demo cursor" src="Example File 17" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(2)" alt="">
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="Example File 18" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="100" onclick="currentSlide(3)" alt="">
+        <img class="demo cursor" src="Example File 18" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(3)" alt="">
       </div>
     
   </div>
@@ -192,13 +194,15 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].scrollIntoView();
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
 
 
-    <h2 id="video">Video</h2>
-</div>
+    <hr>
+    <h2 id="title">Video</h2>
+</div></div>
 
 
     </body>
