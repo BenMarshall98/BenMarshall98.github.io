@@ -1,0 +1,18 @@
+---
+name: Three Thing Game - Nov 2018
+shortname: ThreeThingGameNov18
+shortcontent: Three Thing Game is a biannual event that is run at the University of Hull. The event lasts over the weekend, with the aim for teams of students to build a game based on three given words. My team was given the words “Learning”, “Inventor” and “Walking”.
+languages: C#
+softwareAPI: Unity
+---
+Three Thing Game is a biannual event that is run at the University of Hull. The event lasts over the weekend, with the aim for teams of students to build a game based on three given words.
+
+I decided to take part in the event for the November 2018 edition, forming a team with 2 other people. We were given the words “Learning”, “Inventor” and “Walking”. As a team we did not have much experience using Unity, I had not used Unity before, so we decided to produce a 2D Platformer game with the hope that this would allow us to focus more on gameplay instead of dealing with the more complex aspects of Unity.
+
+From the words “Learning” and “Inventor” we decided to build a game focused on teaching people about historic inventions / discoveries, each person in the team was given a different invention to build a level around, in each case the invention would act as an enemy. The aim for the player is to collect all the “Brains” dotted around the level, before a portal would open at the end of the level, allowing the player to move to the next level. Between each level a screen would be shown with a bit of text talking about the invention / discovery. The “Walking” element of the game would simply come from the game being a platformer.
+
+Each of the members in the team had a background in programming, as such we decided to use assets from the Unity Asset store or other such places. This allowed us to focus on the gameplay, instead of areas that we as a team were not strong in. While building the game we made use of the Unity Collab module to share any code, levels or assets that we were working on or added to our own solution. The Unity Collab worked quite well for us, with no major conflicts when sharing code, in part this was helped by each person working on a different level, or script at any one time.
+
+I focused on two main aspects of the game, the fire level and collision response. The fire level was fairly simple to build, for the most part it was a case of creating an object, such as the floor or fire, with the required properties and copy them around the room. Looking back I realized that I made a literal copy of the object, which in hindsight creating a prefab of the object, and copying that would have been a better solution.
+
+For the most part the collision response used simple if touching then do XYZ, for example if the player was touching a fire object then the death sequence would play before resetting the scene, or if the player touched a brain then the brain object would be destroyed and the brain counter would increment. The hardest collision detection / movement to get right was the floor when coupled with jumping, as a team we wanted the character to be able to double jump. The double jump was a case of keeping track of how many times the character had jumped before landing. However, the cases for landing caused issues, we wanted the character to be only able to jump if they had landed on top of the floor tile. While I managed to achieve this when jumping if there were no tiles above the character, if there was then the character would end up phasing through the above tile (luckily all the way through the tile). While this was a problem that I knew about and worked on for most of the event, it was ultimately left unsolved before the event was completed.
