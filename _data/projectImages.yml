@@ -11,39 +11,24 @@
       title: Example Title 3
 3DGraphicsP1:
   images:
-    - file: Example File 4
-      text: Example Text 4
-      title: Example Title 4
-    - file: Example File 5
-      text: Example Text 5
-      title: Example Title 5
-    - file: Example File 6
-      text: Example Text 6
-      title: Example Title 6
+    - file: /assets/images/3DP1-Normal-Mapping.png
+      title: Normal Mapping / Lighting
+    - file: /assets/images/3DP1-Normal-Output.png
+      title: Framebuffer (Normal Output)
+    - file: /assets/images/3DP1-Inverted-Output.png
+      title: Framebuffer (Inverted Output)
+    - file: /assets/images/3DP1-Grayscale-Output.png
+      title: Framebuffer (Grayscale-Output)
+    - file: /assets/images/3DP1-Blur-Output.png
+      title: Framebuffer (Blur Output)
+    - file: /assets/images/3DP1-Edge-Detection.png
+      title: Framebuffer (Edge Detection)
+    - file: /assets/images/3DP1-8-Bit-Output.png
+      title: Framebuffer (8-bit Effect)
 3DGraphicsP2:
   images:
     - file: Example File 7
       title: Example Title 7
-    - file: Example File 8
-      title: Example Title 8
-    - file: Example File 9
-      title: Example Title 9
-    - file: Example File 9
-      title: Example Title 9
-    - file: Example File 9
-      title: Example Title 9
-    - file: Example File 9
-      title: Example Title 9
-    - file: Example File 9
-      title: Example Title 9
-    - file: Example File 9
-      title: Example Title 9
-    - file: Example File 9
-      title: Example Title 9
-    - file: Example File 9
-      title: Example Title 9
-    - file: Example File 9
-      title: Example Title 9
 GamesArchitecture:
   images:
     - file: Example File 10
