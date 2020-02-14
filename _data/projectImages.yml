@@ -11,7 +11,7 @@
       title: Example Title 3
 3DGraphicsP1:
   images:
-    - file: /assets/images/3DP1-Normal-Mapping.png
+    - file: /assets/images/3DP1-Normal-Mapping.PNG
       title: Normal Mapping / Lighting
     - file: /assets/images/3DP1-Normal-Output.png
       title: Framebuffer (Normal Output)
