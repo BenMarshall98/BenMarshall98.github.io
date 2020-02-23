@@ -1,42 +1,49 @@
 2DGraphics:
   images:
-    - file: /assets/images/default_image.png
-      text: Example Text 1
-      title: Example Title 1
-    - file: Example File 2
-      text: Example Text 2
-      title: Example Title 2
-    - file: Example File 3
-      text: Example Text 3
-      title: Example Title 3
+    - file: /assets/images/2D-CollisionDetection.PNG
+      title: Circle - Polygon Collision Detection
+    - file: /assets/images/2D-NoCollisionDetection.PNG
+      title: Placeable Circle
+    - file: /assets/images/2D-ApplyingImpulse.PNG
+      title: Applying Impulse to Circle
+    - file: /assets/images/2D-PolygonPolygon.PNG
+      title: Placeable Circle
+    - file: /assets/images/2D-PolygonPolygonCollision.PNG
+      title: Polygon - Polygon Collision Detection
 3DGraphicsP1:
   images:
     - file: /assets/images/3DP1-Normal-Mapping.PNG
       title: Normal Mapping / Lighting
-    - file: /assets/images/3DP1-Normal-Output.png
+    - file: /assets/images/3DP1-Normal-Output.PNG
       title: Framebuffer (Normal Output)
-    - file: /assets/images/3DP1-Inverted-Output.png
+    - file: /assets/images/3DP1-Inverted-Output.PNG
       title: Framebuffer (Inverted Output)
-    - file: /assets/images/3DP1-Grayscale-Output.png
+    - file: /assets/images/3DP1-Grayscale-Output.PNG
       title: Framebuffer (Grayscale-Output)
-    - file: /assets/images/3DP1-Blur-Output.png
+    - file: /assets/images/3DP1-Blur-Output.PNG
       title: Framebuffer (Blur Output)
-    - file: /assets/images/3DP1-Edge-Detection.png
+    - file: /assets/images/3DP1-Edge-Detection.PNG
       title: Framebuffer (Edge Detection)
-    - file: /assets/images/3DP1-8-Bit-Output.png
+    - file: /assets/images/3DP1-8-Bit-Output.PNG
       title: Framebuffer (8-bit Effect)
 3DGraphicsP2:
   images:
-    - file: Example File 7
-      title: Example Title 7
+    - file: /assets/images/3DP2-Barrels.PNG
+      title: Parallax Mapping on Barrels and Wall
+    - file: /assets/images/3DP2-Particle-Fire.PNG
+      title: Particle Fire Effect
+    - file: /assets/images/3DP2-Transparent-Web.PNG
+      title: Transparent Web
+    - file: /assets/images/3DP2-Glowing-Objects.PNG
+      title: Glowing Objects
 GamesArchitecture:
   images:
-    - file: Example File 10
-      text: Example Text 10
-    - file: Example File 11
-      text: Example Text 11
-    - file: Example File 12
-      text: Example Text 12
+    - file: /assets/images/GA-Game-Start.PNG
+      title: Game Without Ghosts
+    - file: /assets/images/GA-Ghosts.PNG
+      title: Game With Ghosts
+    - file: /assets/images/GA-Minimap.PNG
+      text: Minimap
 HonoursStageProject:
   images:
     - file: Example File 13

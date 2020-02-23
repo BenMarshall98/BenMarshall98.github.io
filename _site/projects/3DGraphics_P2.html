@@ -17,7 +17,17 @@
 </div>
         <h1 id="projectTitle">3D Graphics Part 2</h1>
 <div id="content">
-    <p>The project details for 3D Graphics Part 2.</p>
+    <p>While 3D Graphics Part 1 was focused on the implementation of basic OpenGL objects and their use, such as texture, VBOs, and shaders. This coursework was focused on the creation of shader effects, as such the software RenderMonkey was used to provide the framework for the coursework.</p>
+
+<p>For this coursework I was tasked with creating a dungeon style scene, using various types of shader effects. As I had focused on Normal Mapping in the previous coursework, this time my focus was on Parallax Mapping. This ended up being the effect used on most of the objects within the scene.</p>
+
+<p>To bring the dungeon to life there were various moving objects such as a snake and bat. Both of which used the vertex shader to move parts of the model in a fashion that would make sense for the given object.</p>
+
+<p>Around the dungeon I paced several touches, each of which had a fire particle effect. This effect simply produced a coloured circle, which would change colour and move upwards depending on the age of the particle. The particles were then blended together to produce the final fire effect.</p>
+
+<p>There were a few glowing objects around the scene. Each object was first rendered into a framebuffer, then from the framebuffer rendered onto a billboard with a different glowing effect.</p>
+
+<p>For certain parts of the coursework the use of RenderMonkey made it easier to complete, for example whereas I had issues with Normal Mapping in the previous coursework due to incomplete data, I had no such issues with Parallax Mapping (which uses mostly the same data) in RenderMonkey as it sorts the data for you. However, I did end up having issues with the software itself partly due to its age. At times the software would inexplicably crash, which seemed to affect newer machines more than older machines.</p>
 
     <hr>
     <h2 id="title">Gallery</h2>
@@ -128,8 +138,23 @@
 <div class="container">
   
       <div class="mySlides">
-          <div class="numbertext">1 / 1</div>
-          <img src="Example File 7" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+          <div class="numbertext">1 / 4</div>
+          <img src="/assets/images/3DP2-Barrels.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+      </div>
+  
+      <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="/assets/images/3DP2-Particle-Fire.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+      </div>
+  
+      <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="/assets/images/3DP2-Transparent-Web.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+      </div>
+  
+      <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="/assets/images/3DP2-Glowing-Objects.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
       </div>
   
 
@@ -143,7 +168,19 @@
   <div class="row">
     
       <div class="column">
-        <img class="demo cursor" src="Example File 7" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(1)" alt="Example Title 7">
+        <img class="demo cursor" src="/assets/images/3DP2-Barrels.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(1)" alt="Parallax Mapping on Barrels and Wall">
+      </div>
+    
+      <div class="column">
+        <img class="demo cursor" src="/assets/images/3DP2-Particle-Fire.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(2)" alt="Particle Fire Effect">
+      </div>
+    
+      <div class="column">
+        <img class="demo cursor" src="/assets/images/3DP2-Transparent-Web.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(3)" alt="Transparent Web">
+      </div>
+    
+      <div class="column">
+        <img class="demo cursor" src="/assets/images/3DP2-Glowing-Objects.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(4)" alt="Glowing Objects">
       </div>
     
   </div>

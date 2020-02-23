@@ -17,7 +17,17 @@
 </div>
         <h1 id="projectTitle">3D Graphics Part 1</h1>
 <div id="content">
-    <p>The project details for 3D Graphics Part 1.</p>
+    <p>The aim for this coursework was to build a 3D scene using basic graphics techniques in OpenGL. This included vertex buffers, shaders, texturing, lighting, cameras and framebuffers.</p>
+
+<p>To load in each model into the program I implemented a OBJ loader, that would not only load in the model but would optimise the vertices so that shared vertices were only passed into OpenGL once, and would created a file with the pre-optimised version of the model (loaded instead if it existed) resulting in faster load times.</p>
+
+<p>Each model would either be rendered using a texture or a material (diffuse, specular, etc defined within the program) using Phong lighting. While implementing texturing and lighting I was looking ensuring that the normal also faced in the right direction (using the inverse transpose model matrix), during which I ended up looking at normal mapping. I decided to have a go at implementing normal mapping.</p>
+
+<p>The first step that I looked at with normal mapping was creating the tangent, bitangent from the existing model data. This was a step that I added to the end of the OBJ loader, also outputting to the pre-optimised file. In cases where the vertex was shared, I calculated the average for both the tangent and bitangent giving a more accurate look to the textured shape.</p>
+
+<p>Once the tangent and bitangent was calculated I then sent the data to the GPU, where a TBN matrix could be calculated and applied to the normal map texture. This step ended up causing a few issues, where the data for both the tangent and bitangent was not being sent up. While this ended up being a simple fix where I did not enable the vertex attribute, by the time I realized that the data was not being sent up, I had implemented the entire process. Which led to me spending a while looking at each step of the process to check if it was right. It was not until I tried to output the tangent / bitangent as the color that I realized that I was not sending the data up, at the time I did not realize that I had to enable the attribute. Since this project I have started to use a software called RenderDoc to aid with the debugging of shaders, which at the time would have been useful.</p>
+
+<p>One of the more advanced requirements of the coursework was implementing Framebuffers, luckily I managed to get framebuffers done without any major issues. With the framebuffer I decided to apply a range of different graphical effects, from grayscale to blur to a 8-bit pixelated effect. For most of the effects I used a kernel to change each pixel. With the 8-bit effect got the average color within a region of pixels, then turned each color channel into one of 8 shades, the whole region would then be given the same color.</p>
 
     <hr>
     <h2 id="title">Gallery</h2>
@@ -134,32 +144,32 @@
   
       <div class="mySlides">
           <div class="numbertext">2 / 7</div>
-          <img src="/assets/images/3DP1-Normal-Output.png" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+          <img src="/assets/images/3DP1-Normal-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
       </div>
   
       <div class="mySlides">
           <div class="numbertext">3 / 7</div>
-          <img src="/assets/images/3DP1-Inverted-Output.png" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+          <img src="/assets/images/3DP1-Inverted-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
       </div>
   
       <div class="mySlides">
           <div class="numbertext">4 / 7</div>
-          <img src="/assets/images/3DP1-Grayscale-Output.png" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+          <img src="/assets/images/3DP1-Grayscale-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
       </div>
   
       <div class="mySlides">
           <div class="numbertext">5 / 7</div>
-          <img src="/assets/images/3DP1-Blur-Output.png" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+          <img src="/assets/images/3DP1-Blur-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
       </div>
   
       <div class="mySlides">
           <div class="numbertext">6 / 7</div>
-          <img src="/assets/images/3DP1-Edge-Detection.png" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+          <img src="/assets/images/3DP1-Edge-Detection.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
       </div>
   
       <div class="mySlides">
           <div class="numbertext">7 / 7</div>
-          <img src="/assets/images/3DP1-8-Bit-Output.png" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+          <img src="/assets/images/3DP1-8-Bit-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
       </div>
   
 
@@ -177,27 +187,27 @@
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="/assets/images/3DP1-Normal-Output.png" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(2)" alt="Framebuffer (Normal Output)">
+        <img class="demo cursor" src="/assets/images/3DP1-Normal-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(2)" alt="Framebuffer (Normal Output)">
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="/assets/images/3DP1-Inverted-Output.png" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(3)" alt="Framebuffer (Inverted Output)">
+        <img class="demo cursor" src="/assets/images/3DP1-Inverted-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(3)" alt="Framebuffer (Inverted Output)">
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="/assets/images/3DP1-Grayscale-Output.png" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(4)" alt="Framebuffer (Grayscale-Output)">
+        <img class="demo cursor" src="/assets/images/3DP1-Grayscale-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(4)" alt="Framebuffer (Grayscale-Output)">
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="/assets/images/3DP1-Blur-Output.png" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(5)" alt="Framebuffer (Blur Output)">
+        <img class="demo cursor" src="/assets/images/3DP1-Blur-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(5)" alt="Framebuffer (Blur Output)">
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="/assets/images/3DP1-Edge-Detection.png" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(6)" alt="Framebuffer (Edge Detection)">
+        <img class="demo cursor" src="/assets/images/3DP1-Edge-Detection.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(6)" alt="Framebuffer (Edge Detection)">
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="/assets/images/3DP1-8-Bit-Output.png" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(7)" alt="Framebuffer (8-bit Effect)">
+        <img class="demo cursor" src="/assets/images/3DP1-8-Bit-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(7)" alt="Framebuffer (8-bit Effect)">
       </div>
     
   </div>
