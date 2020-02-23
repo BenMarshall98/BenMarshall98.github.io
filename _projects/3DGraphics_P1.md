@@ -4,6 +4,7 @@ shortname: 3DGraphicsP1
 shortcontent: The aim for this coursework was to build a 3D scene using basic graphics techniques in OpenGL.
 languages: C#, GLSL
 softwareAPI: OpenTK, OpenGL
+video: <iframe width="1280" height="720" src="https://www.youtube.com/embed/TgdZnvIz0Zo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ---
 The aim for this coursework was to build a 3D scene using basic graphics techniques in OpenGL. This included vertex buffers, shaders, texturing, lighting, cameras and framebuffers.
 

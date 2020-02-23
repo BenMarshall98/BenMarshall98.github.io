@@ -156,7 +156,7 @@ function showSlides(n, scroll = true) {
 
   if (scroll)
   {
-    dots[slideIndex-1].scrollIntoView();
+    dots[slideIndex-1].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
   }
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
