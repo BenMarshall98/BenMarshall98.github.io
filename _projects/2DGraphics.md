@@ -4,6 +4,7 @@ shortname: 2DGraphics
 shortcontent: The aim for this module was to use basic 2D graphic techniques to create a 2D scene and use 2D physics to help animate / simulate the scene.
 languages: HTML, JavaScript
 softwareAPI: None
+video: <iframe width="1280" height="720" src="https://www.youtube.com/embed/DlPHhv0hFQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ---
 The aim for this module was to use basic 2D graphic techniques to create a 2D scene and use 2D physics to help animate / simulate the scene.
 
