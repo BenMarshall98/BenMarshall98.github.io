@@ -44,27 +44,85 @@ GamesArchitecture:
       title: Game With Ghosts
     - file: /assets/images/GA-Minimap.PNG
       text: Minimap
+GlobalGameJam20:
+  images:
+    - file: /assets/images/GGJ-Spaceship.PNG
+      title: Game Start
+    - file: /assets/images/GGJ-Shooting.PNG
+      title: Collecting Items
+    - file: /assets/images/GGJ-Low-Oxygen.PNG
+      title: Losing Health
 HonoursStageProject:
   images:
-    - file: Example File 13
-      text: Example Text 13
-    - file: Example File 14
-      text: Example Text 14
-    - file: Example File 15
-      text: Example Text 15
+    - file: /assets/images/HSP-3D-Game.PNG
+      title: 3D Game - Game Start
+    - file: /assets/images/HSP-Collecting-Health.PNG
+      title: 3D Game - Collecting Health
+    - file: /assets/images/HSP-Enemy-Infront.PNG
+      title: 3D Game - Attacking Enemy
+    - file: /assets/images/HSP-Collecting-Coin.PNG
+      title: Platformer Game - Collecting Coin
+    - file: /assets/images/HSP-Platformer-Game.PNG
+      title: Platformer Game - Solving Puzzle
 RealTimeGraphics:
   images:
-    - file: Example File 16
-      text: Example Text 16
-    - file: Example File 17
-      text: Example Text 17
-    - file: Example File 18
-      text: Example Text 18
+    - file: /assets/images/RTG-Gorand-Shading.PNG
+      title: Gorand Shading
+    - file: /assets/images/RTG-Phong-Shading.PNG
+      title: Phong Shading
+    - file: /assets/images/RTG-Texture-Mapping.PNG
+      title: Texture Mapping
+    - file: /assets/images/RTG-Normal-Mapping.PNG
+      title: Normal Mapping
+    - file: /assets/images/RTG-Displacement.PNG
+      title: Displacement Mapping
+    - file: /assets/images/RTG-Environment-Mapping.PNG
+      title: Environment Mapping
+    - file: /assets/images/RTG-Toon-Shading.PNG
+      title: Toon Shading
+    - file: /assets/images/RTG-Transparency.PNG
+      title: Transparency
+    - file: /assets/images/RTG-Glowing.PNG
+      title: Glowing
+    - file: /assets/images/RTG-Spot-Lights.PNG
+      title: Spot Lights
+    - file: /assets/images/RTG-Simple-Shadows.PNG
+      title: Simple Shadows
+    - file: /assets/images/RTG-Shadow-Mapping.PNG
+      title: Shadow Mapping
+    - file: /assets/images/RTG-Shadow-Mapping-PCF.PNG
+      title: Shadow Mapping (PCF)
+    - file: /assets/images/RTG-Shadow-Mapping-VSM.PNG
+      title: Shadow Mapping (VSM)
+    - file: /assets/images/RTG-HDR.PNG
+      title: HDR Output
+    - file: /assets/images/RTG-Bloom.PNG
+      title: HDR with Bloom
+    - file: /assets/images/RTG-Deffered.PNG
+      title: Deferred Output
+    - file: /assets/images/RTG-Deffered-Position.PNG
+      title: Deferred Output (Position)
+    - file: /assets/images/RTG-Deffered-Normals.PNG
+      title: Deferred Output (Normals)
 Simulation:
   images:
-    - file: Example File 19
-      text: Example Text 19
-    - file: Example File 20
-      text: Example Text 20
-    - file: Example File 21
-      text: Example Text 21
+    - file: /assets/images/Physics-Physics-Tower.PNG
+      title: Physics Tower
+    - file: /assets/images/Physics-Octree.PNG
+      title: Octree
+    - file: /assets/images/Physics-Moving-Spheres.PNG
+      title: Sphere Simulation
+    - file: /assets/images/Physics-Moving-Cubes.PNG
+      title: Cube Simulation
+    - file: /assets/images/Physics-Moving-Cubes-Spheres.PNG
+      title: Sphere and Cube Simulation
+ThreeThingGameNov18:
+  images:
+    - file: /assets/images/TTG-Fire-Level.PNG
+      title: Fire Level
+    - file: /assets/images/TTG-Wheel-Level.PNG
+      title: Wheel Level
+    - file: /assets/images/TTG-Arrow-Level.PNG
+      title: Arrow Level
+    - file: /assets/images/TTG-Portal.PNG
+      title: Portal

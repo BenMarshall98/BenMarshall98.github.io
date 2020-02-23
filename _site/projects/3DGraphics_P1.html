@@ -10,8 +10,6 @@
     
         <a href="/" >Home</a>
     
-        <a href="/about.html" >About</a>
-    
         <a href="/portfolio.html" >Portfolio</a>
     
 </div>
@@ -173,8 +171,8 @@
       </div>
   
 
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+  <a class="prev" onclick="plusSlides(-1);">❮</a>
+  <a class="next" onclick="plusSlides(1);">❯</a>
 
   <div class="caption-container">
     <p id="caption"></p>
@@ -183,31 +181,31 @@
   <div class="row">
     
       <div class="column">
-        <img class="demo cursor" src="/assets/images/3DP1-Normal-Mapping.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(1)" alt="Normal Mapping / Lighting">
+        <img class="demo cursor" src="/assets/images/3DP1-Normal-Mapping.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(1);" alt="Normal Mapping / Lighting">
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="/assets/images/3DP1-Normal-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(2)" alt="Framebuffer (Normal Output)">
+        <img class="demo cursor" src="/assets/images/3DP1-Normal-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(2);" alt="Framebuffer (Normal Output)">
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="/assets/images/3DP1-Inverted-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(3)" alt="Framebuffer (Inverted Output)">
+        <img class="demo cursor" src="/assets/images/3DP1-Inverted-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(3);" alt="Framebuffer (Inverted Output)">
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="/assets/images/3DP1-Grayscale-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(4)" alt="Framebuffer (Grayscale-Output)">
+        <img class="demo cursor" src="/assets/images/3DP1-Grayscale-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(4);" alt="Framebuffer (Grayscale-Output)">
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="/assets/images/3DP1-Blur-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(5)" alt="Framebuffer (Blur Output)">
+        <img class="demo cursor" src="/assets/images/3DP1-Blur-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(5);" alt="Framebuffer (Blur Output)">
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="/assets/images/3DP1-Edge-Detection.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(6)" alt="Framebuffer (Edge Detection)">
+        <img class="demo cursor" src="/assets/images/3DP1-Edge-Detection.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(6);" alt="Framebuffer (Edge Detection)">
       </div>
     
       <div class="column">
-        <img class="demo cursor" src="/assets/images/3DP1-8-Bit-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(7)" alt="Framebuffer (8-bit Effect)">
+        <img class="demo cursor" src="/assets/images/3DP1-8-Bit-Output.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(7);" alt="Framebuffer (8-bit Effect)">
       </div>
     
   </div>
@@ -215,7 +213,7 @@
 
 <script>
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex, false);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -225,7 +223,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(n, scroll = true) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
@@ -240,7 +238,11 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  dots[slideIndex-1].scrollIntoView();
+
+  if (scroll)
+  {
+    dots[slideIndex-1].scrollIntoView();
+  }
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
@@ -252,4 +254,6 @@ function showSlides(n) {
 
 
     </body>
+    <script>
+    </script>
 </html>

@@ -10,8 +10,6 @@
     
         <a href="/" >Home</a>
     
-        <a href="/about.html" >About</a>
-    
         <a href="/portfolio.html" >Portfolio</a>
     
 </div>
@@ -137,9 +135,29 @@
 
 <div class="container">
   
+      <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="/assets/images/TTG-Fire-Level.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+      </div>
+  
+      <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="/assets/images/TTG-Wheel-Level.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+      </div>
+  
+      <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="/assets/images/TTG-Arrow-Level.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+      </div>
+  
+      <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="/assets/images/TTG-Portal.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="500">
+      </div>
+  
 
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+  <a class="prev" onclick="plusSlides(-1);">❮</a>
+  <a class="next" onclick="plusSlides(1);">❯</a>
 
   <div class="caption-container">
     <p id="caption"></p>
@@ -147,12 +165,28 @@
 
   <div class="row">
     
+      <div class="column">
+        <img class="demo cursor" src="/assets/images/TTG-Fire-Level.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(1);" alt="Fire Level">
+      </div>
+    
+      <div class="column">
+        <img class="demo cursor" src="/assets/images/TTG-Wheel-Level.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(2);" alt="Wheel Level">
+      </div>
+    
+      <div class="column">
+        <img class="demo cursor" src="/assets/images/TTG-Arrow-Level.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(3);" alt="Arrow Level">
+      </div>
+    
+      <div class="column">
+        <img class="demo cursor" src="/assets/images/TTG-Portal.PNG" onerror="this.onerror=null;this.src = '/assets/images/default_image.png';" width="auto" height="150" onclick="currentSlide(4);" alt="Portal">
+      </div>
+    
   </div>
 </div>
 
 <script>
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex, false);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -162,7 +196,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(n, scroll = true) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
@@ -177,7 +211,11 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  dots[slideIndex-1].scrollIntoView();
+
+  if (scroll)
+  {
+    dots[slideIndex-1].scrollIntoView();
+  }
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
@@ -189,4 +227,6 @@ function showSlides(n) {
 
 
     </body>
+    <script>
+    </script>
 </html>

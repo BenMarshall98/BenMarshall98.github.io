@@ -2,17 +2,18 @@
 layout: default
 title: Projects
 ---
-<h1>Projects</h1>
+<h1 id="title">Projects</h1>
 
+<div id="content">
 {% for project in site.projects %}
     <a id="portfolioLink" href="{{ project.url }}">
-    <div class="images">
-        <img src="{{ project.image }}" onerror="this.onerror=null;this.src = {{site.baseurl}}'/assets/images/default_image.png';" width="200" height ="200">
         <div>
             <h2>{{ project.name }}</h2>
             <p>{{ project.shortcontent | markdownify }}</p>
+            <p><b>Languages: </b>{{ project.languages }}</p>
+            <p><b>Software / API: </b>{{ project.softwareAPI }}</p>
         </div>
-    </div>
     </a>
     <hr>
 {% endfor %}
+</div>
