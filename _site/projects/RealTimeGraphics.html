@@ -15,7 +15,15 @@
 </div>
         <h1 id="projectTitle">Real Time Graphics</h1>
 <div id="content">
-    <p>The project details for Real Time Graphics.</p>
+    <p>This module was very similar to both parts of the 3D Graphics coursework, except this time it was looking at DirectX and some of the effects were more advanced. As part of the coursework we were given a list of effects to complete; some were required, while others could be picked to get the rest of the marks. Since I had done most of the effects at some point or another I decided to try and complete every effect, with some effects doing a slight bit extra on top of the effect.</p>
+
+<p>One of the effects was displacement mapping, the intended way of displacement mapping was to just use the vertex shader to displace each vertex. However, I knew that unless I placed in a high poly model to the shader the result would not look great, instead I decided to use this opportunity to learn how to create/use tessellation shaders to do displacement. One step that I did not do was view dependent displacement, however I was dealing with a very small scene so for the most part it would not have a massive effect on the performance.</p>
+
+<p>There were two effects that would affect how the scene was rendered, HDR and deferred rendering. While I could have put both on the same pipeline, I decided to instead build a rendering pipeline that could do either forwarding rendering (resulting in a scene with HDR applied), or deferred rendering (resulting in a scene without HDR). This did mean that I had to use rendering tricks to deal with any effect that could not naturally go through the deferred pipeline. Effects such as transparency, toon shading or glowing would first get rendered to a framebuffer (in both forward and deferred rendering), in each case the colour and depth was stored. Once the pipeline went through each effect, it would go through the effects with framebuffers, rendering the contents of each framebuffer onto another framebuffer, which could combine the ‘current’ scene and the effect. The depth was used to place the object in the right place within the scene. This worked with most effects, however there was an issue with glowing, where the glowing part of the effect did not have the right depth.</p>
+
+<p>While I had done shadows before, one of the required types of shadows was ‘simple’ shadows. These ‘simple’ shadows only rendered the shadow on the floor, this was achieved using a ray-plane intersection test. The rest of the shadows were achieved using shadow mapping, with either PCF or VSM applied depending on the current rendering settings.</p>
+
+<p>The scene contained ink that could change it’s height, the ink would ‘stain’ any object that submerged in the ink. For this I checked the y position of the object against the height of the ink, if it was below I would apply a fog effect on the object.</p>
 
     <hr>
     <h2 id="title">Gallery</h2>

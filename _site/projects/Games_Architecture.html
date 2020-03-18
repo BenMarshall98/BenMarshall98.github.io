@@ -29,6 +29,10 @@
 
 <p>Normally the A* algorithm is good at dealing with concave areas in the map, however whenever the ghost went into a concave area the game would freeze, while unsuccessfully trying to calculate a way out. I believe part of the issue was due to the algorithm trying the same path multiple times, at the time I decided to rewrite most of the AI making sure to include some way of preventing the same path to be taking multiple times, which did seem to resolve the issue.</p>
 
+<p>At first using ECS architecture resulted in the few couple of weeks of development being quite slow, however I quickly realised that most systems / components were very similar, not enough to combine but enough to ‘template’. Overall with ECS once I got the hang of it I quite enjoyed that I could quickly make entities knowing that in most cases the Entity will just work as intended.</p>
+
+<p>Knowing what the end game would be, lead to a few design decisions that would hinder development of another game using the same game engine. One of which was input, in my implementation I had a input manager which knew what controls to look for and what they affected. This could easily be fixed by allowing the developer to choose and map the input to a delegate (or other such method).</p>
+
     <hr>
     <h2 id="title">Gallery</h2>
     <style>

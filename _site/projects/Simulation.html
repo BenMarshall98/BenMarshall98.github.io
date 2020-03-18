@@ -15,7 +15,15 @@
 </div>
         <h1 id="projectTitle">Physics Simulation</h1>
 <div id="content">
-    <p>The project details for Physics Simulation.</p>
+    <p>The aim for this coursework was to build a simple physics engine that would simulate balls, or other shapes falling down a box with different impeding layers contained within. There were two layers within the box, one which was a simple plane, and the other was a plane with holes and a propeller on it. Each of the layers could be moved out / into the box.</p>
+
+<p>While the main focus of the coursework was the physics engine, there was a need to use a Graphics API to be able to demonstrate the physics simulation working. For this I decided to use OpenGL, while at the time I was learning DirectX 11, I felt that my experience with OpenGL would allow me to focus on the physics side. In terms of graphics each of the shapes were textured and randomly assigned a colour, both of which allowed the shapes to be easily distinguished from the rest, and to see if the shape was rotating. The box and layers were transparent.</p>
+
+<p>For the most part getting the objects to move, rotate and respond to collisions was not that bad. For movement / rotation I adapted Runge-Kurta 4th Order method to help get an accurate position / rotation. There were a few issues with rotation at first where I was using a rotation matrix, in some cases the rotation would end up skewing and ended up scaling the object. To resolve this I ended up using a quaternion instead, and simply turned it into a matrix whenever I required it. To respond to collisions I used an Impulse-based reaction model, which allowed me to calculate the new velocity and rotation at the same time.</p>
+
+<p>By far the most challenging part of the coursework was the collision detection, some collision detection algorithms were well defined such as sphere-sphere, sphere-plane, for both translation and rotation. To deal with more complex collision detection algorithms I used a form of binary search to check for collisions at certain snapshots of time. As well as dealing with spheres, I also included the possibility to create cuboids, this proved very hard to implement and lead to unstable simulation. Part of the issue was that I was unable to get accurate collision points and I was only considering one collision point per object. Unfortunately, I was unable to implement cuboid-cylinder collision detection.</p>
+
+<p>Checking each object against every other object would be very expensive and wasteful to compute. Instead when each of the dynamic objects were created they were placed into a Octree. The Octree was then used to get a list of possible collisions between each of the dynamic objects (objects in either the same cell or a neighbouring cell), which not only greatly reduced the number of collision checks, but also increased the number of objects that could be on the screen. The Octree did not include any object that were permanently on the screen, which while it did waste collision checks, I also knew that the number of permanent objects was small enough that it did not greatly affect the performance of the simulation.</p>
 
     <hr>
     <h2 id="title">Gallery</h2>

@@ -4,6 +4,7 @@ shortname: 3DGraphicsP2
 shortcontent: The aim for this coursework is to create GLSL shader effects in the software RenderMonkey.
 languages: GLSL
 softwareAPI: RenderMonkey
+video: <p>Unfortunatly, there is no video for this project.</p>
 ---
 While 3D Graphics Part 1 was focused on the implementation of basic OpenGL objects and their use, such as texture, VBOs, and shaders. This coursework was focused on the creation of shader effects, as such the software RenderMonkey was used to provide the framework for the coursework.
 
