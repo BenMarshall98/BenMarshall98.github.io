@@ -4,6 +4,7 @@ shortname: ThreeThingGameNov18
 shortcontent: Three Thing Game is a biannual event that is run at the University of Hull. The event lasts over the weekend, with the aim for teams of students to build a game based on three given words. My team was given the words “Learning”, “Inventor” and “Walking”.
 languages: C#
 softwareAPI: Unity
+video: <iframe width="1280" height="720" src="https://www.youtube.com/embed/eDbj6OHQGPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ---
 Three Thing Game is a biannual event that is run at the University of Hull. The event lasts over the weekend, with the aim for teams of students to build a game based on three given words.
 
