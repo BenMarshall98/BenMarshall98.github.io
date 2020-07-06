@@ -4,6 +4,7 @@ shortname: GamesArchitecture
 shortcontent: Using Entity-Component-System architecture, implement a game engine. Then use the game engine to build a 3D pacman game.
 languages: C#, GLSL
 softwareAPI: OpenTK, OpenGL
+video: <iframe width="1280" height="720" src="https://www.youtube.com/embed/JxgcTvy3u60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ---
 The aim for the coursework for this module was to develop a game engine based around Entity - Component - System (ECS) architecture, then use the game engine to build a 3D pacman game.
 

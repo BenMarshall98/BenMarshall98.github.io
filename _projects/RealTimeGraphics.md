@@ -4,6 +4,7 @@ shortname: RealTimeGraphics
 shortcontent: The aim for this coursework was to learn how to use DirectX and HLSL to create a 3D scene.
 languages: C++, HLSL
 softwareAPI: DirectX
+video: <iframe width="1280" height="720" src="https://www.youtube.com/embed/re5ljhq5vTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ---
 This module was very similar to both parts of the 3D Graphics coursework, except this time it was looking at DirectX and some of the effects were more advanced. As part of the coursework we were given a list of effects to complete; some were required, while others could be picked to get the rest of the marks. Since I had done most of the effects at some point or another I decided to try and complete every effect, with some effects doing a slight bit extra on top of the effect.
 

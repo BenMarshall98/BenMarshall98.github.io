@@ -4,6 +4,7 @@ shortname: GlobalGameJam20
 shortcontent: Global Game Jam is an annual event that is run around the globe, with schools and universities hosting it at various locations. The event lasts over the weekend, with the aim for teams of students to build a game based around a theme. This year the theme was ‘Repair’.
 languages: C#
 softwareAPI: Unity
+video: <iframe width="1280" height="720" src="https://www.youtube.com/embed/aKFCUMLXAoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ---
 Global Game Jam is an annual event that is run around the globe, with schools and universities hosting it at various locations. The event lasts over the weekend, with the aim for teams of students to build a game based around a theme. This year the theme was ‘Repair’.
 

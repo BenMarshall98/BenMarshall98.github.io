@@ -4,6 +4,7 @@ shortname: Simulation
 shortcontent: The aim for this coursework was to build a simple physics engine that would simulate balls, or other shapes falling down a box with different impeding layers contained within.
 languages: C++, GLSL
 softwareAPI: OpenGL
+video: <iframe width="1280" height="720" src="https://www.youtube.com/embed/08kLmDbMLLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ---
 The aim for this coursework was to build a simple physics engine that would simulate balls, or other shapes falling down a box with different impeding layers contained within. There were two layers within the box, one which was a simple plane, and the other was a plane with holes and a propeller on it. Each of the layers could be moved out / into the box.
 
