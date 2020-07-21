@@ -36,6 +36,18 @@
       title: Transparent Web
     - file: /assets/images/3DP2-Glowing-Objects.PNG
       title: Glowing Objects
+AdvancedRendering:
+  images:
+    - file: /assets/images/AR-RayTraced.PNG
+      title: Ray Traced Spheres and Cube
+    - file: /assets/images/AR-RayMarching.PNG
+      title: Ray Marched Objects
+    - file: /assets/images/AR-TessellatedRock.PNG
+      title: Tessellated Rock
+    - file: /assets/images/AR-ParametricShapes.PNG
+      title: Parametric and Spline Shapes
+    - file: /assets/images/AR-Billboarding.PNG
+      title: Billboarding
 GamesArchitecture:
   images:
     - file: /assets/images/GA-Game-Start.PNG
@@ -44,6 +56,14 @@ GamesArchitecture:
       title: Game With Ghosts
     - file: /assets/images/GA-Minimap.PNG
       text: Minimap
+GamesNetworking:
+  images:
+    - file: /assets/images/GAN-SceneSetting.PNG
+      title: Small Pyramid
+    - file: /assets/images/GAN-LargePyramid.PNG
+      title: Large Pyramid
+    - file: /assets/images/GAN-Simulation.PNG
+      text: Simulation
 GlobalGameJam20:
   images:
     - file: /assets/images/GGJ-Spaceship.PNG
