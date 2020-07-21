@@ -64,6 +64,16 @@ HonoursStageProject:
       title: Platformer Game - Collecting Coin
     - file: /assets/images/HSP-Platformer-Game.PNG
       title: Platformer Game - Solving Puzzle
+MSCDisseration:
+  images:
+    - file: /assets/images/NavMeshPlane.png
+      title: Generated Navigation Mesh on Plane
+    - file: /assets/images/NavMeshStairs.png
+      title: Generated Navigation Mesh on Stairs
+    - file: /assets/images/NavMeshOverhang.png
+      title: Generated Navigation Mesh on Overhang
+    - file: /assets/images/NavMeshRegions.png
+      title: Region Stage of Navigation Mesh Generation
 RealTimeGraphics:
   images:
     - file: /assets/images/RTG-Gorand-Shading.PNG
