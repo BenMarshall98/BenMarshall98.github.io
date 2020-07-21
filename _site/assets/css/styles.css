@@ -22,6 +22,6 @@ html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: auto; }
 
 iframe { vertical-align: middle; display: block; margin-left: auto; margin-right: auto; }
 
-h2:hover { color: gray; }
+#portfolioLink:hover h2 { color: gray; }
 
 /*# sourceMappingURL=styles.css.map */

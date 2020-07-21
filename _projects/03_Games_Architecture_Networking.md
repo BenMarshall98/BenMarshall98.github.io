@@ -4,6 +4,7 @@ shortname: GamesNetworking
 shortcontent: Using Entity-Component-System architecture, implement a game engine capable of running a game across multiple PC's.
 languages: C++, HLSL, GLSL
 softwareAPI: DirectX, OpenGL, Winsock
+video: <iframe width="1280" height="720" src="https://www.youtube.com/embed/jXsB46iVNao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ---
 The aim for the coursework for this module was to develop a game engine based around Entity - Component - System (ECS) architecture that was capable of running a game across a network.
 

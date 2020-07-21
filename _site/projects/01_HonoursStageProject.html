@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="tf-8">
-        <title>Honoursstageproject</title>
+        <title>01_honoursstageproject</title>
         <link rel="stylesheet" href=/assets/css/styles.css>
     </head>
     <body>
@@ -12,10 +12,14 @@
     
         <a href="/portfolio.html" >Portfolio</a>
     
+
+    
+        <a href="https://github.com/BenMarshall98/Game-Engine-Uni">GitHub</a>
+    
 </div>
         <h1 id="projectTitle">Honours Stage Project</h1>
-<div id="content">
-    <p>My dissertation was on Component-Based Game Engines, as part of which I implemented a game engine using Entity-Component-System (ECS) architecture. During the start of the dissertation I was completing the Games Architecture module which also resulted in a ECS game engine. To differentiate the two projects I decided to make the game engine capable of producing ‘general’ 3D games, and to program it using C++ which I had just started to learn the year before.</p>
+        <div id="content">
+            <p>My dissertation was on Component-Based Game Engines, as part of which I implemented a game engine using Entity-Component-System (ECS) architecture. During the start of the dissertation I was completing the Games Architecture module which also resulted in a ECS game engine. To differentiate the two projects I decided to make the game engine capable of producing ‘general’ 3D games, and to program it using C++ which I had just started to learn the year before.</p>
 
 <p>To implement most of the advanced parts of the game engine, such as physics or audio, I used different libraries or API, allowing me to focus my work on the game engine itself. In each case I wrote an abstract class that would allow another API to be used in place.</p>
 
@@ -25,9 +29,9 @@
 
 <p>During the implementation of the game engine, I decided to design it so that each game could be created without using C++. For this I used JSON to load / setup each level from the entities to the systems that would be used in the level, for example the shadow system might be used for one level but not another. Every part of the game engine that, at the time, I believed a developer  might need to interact with I implemented a Lua script that could be called instead. While Lua was quite easy to work with to implement the methods and the gameplay, it did make dealing with classes rather hard. Lua does have class like capabilities, called tables in Lua, however I found that they work best when just using Lua by itself and not for scripting.</p>
 
-    <hr>
-    <h2 id="title">Gallery</h2>
-    <style>
+            <hr>
+            <h2 id="title">Gallery</h2>
+            <style>
     body {
       font-family: Arial;
       margin: 0;
@@ -228,12 +232,10 @@ function showSlides(n, scroll = true) {
 </script>
 
 
-    <hr>
-    <h2 id="title">Video</h2>
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/BCxwJ1gnFmI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div></div>
-
-
+            <hr>
+            <h2 id="title">Video</h2>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/BCxwJ1gnFmI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div></div>
     </body>
     <script>
     </script>

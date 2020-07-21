@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="tf-8">
-        <title>3dgraphics_p1</title>
+        <title>10_3dgraphics_p1</title>
         <link rel="stylesheet" href=/assets/css/styles.css>
     </head>
     <body>
@@ -12,10 +12,12 @@
     
         <a href="/portfolio.html" >Portfolio</a>
     
+
+    
 </div>
         <h1 id="projectTitle">3D Graphics Part 1</h1>
-<div id="content">
-    <p>The aim for this coursework was to build a 3D scene using basic graphics techniques in OpenGL. This included vertex buffers, shaders, texturing, lighting, cameras and framebuffers.</p>
+        <div id="content">
+            <p>The aim for this coursework was to build a 3D scene using basic graphics techniques in OpenGL. This included vertex buffers, shaders, texturing, lighting, cameras and framebuffers.</p>
 
 <p>To load in each model into the program I implemented a OBJ loader, that would not only load in the model but would optimise the vertices so that shared vertices were only passed into OpenGL once, and would created a file with the pre-optimised version of the model (loaded instead if it existed) resulting in faster load times.</p>
 
@@ -27,9 +29,9 @@
 
 <p>One of the more advanced requirements of the coursework was implementing Framebuffers, luckily I managed to get framebuffers done without any major issues. With the framebuffer I decided to apply a range of different graphical effects, from grayscale to blur to a 8-bit pixelated effect. For most of the effects I used a kernel to change each pixel. With the 8-bit effect got the average color within a region of pixels, then turned each color channel into one of 8 shades, the whole region would then be given the same color.</p>
 
-    <hr>
-    <h2 id="title">Gallery</h2>
-    <style>
+            <hr>
+            <h2 id="title">Gallery</h2>
+            <style>
     body {
       font-family: Arial;
       margin: 0;
@@ -248,12 +250,10 @@ function showSlides(n, scroll = true) {
 </script>
 
 
-    <hr>
-    <h2 id="title">Video</h2>
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/TgdZnvIz0Zo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div></div>
-
-
+            <hr>
+            <h2 id="title">Video</h2>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/TgdZnvIz0Zo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div></div>
     </body>
     <script>
     </script>

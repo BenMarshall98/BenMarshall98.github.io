@@ -5,6 +5,7 @@ shortcontent: As part of my dissertation I implemented a Component-Based Game En
 languages: C++, GLSL, Lua
 softwareAPI: OpenGL, Bullet Physics Engine, Lua, irrKlang, Assimp, GLM
 video: <iframe width="1280" height="720" src="https://www.youtube.com/embed/BCxwJ1gnFmI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+github: https://github.com/BenMarshall98/Game-Engine-Uni
 ---
 My dissertation was on Component-Based Game Engines, as part of which I implemented a game engine using Entity-Component-System (ECS) architecture. During the start of the dissertation I was completing the Games Architecture module which also resulted in a ECS game engine. To differentiate the two projects I decided to make the game engine capable of producing ‘general’ 3D games, and to program it using C++ which I had just started to learn the year before.
 

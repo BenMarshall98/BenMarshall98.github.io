@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="tf-8">
-        <title>Simulation</title>
+        <title>05_simulation</title>
         <link rel="stylesheet" href=/assets/css/styles.css>
     </head>
     <body>
@@ -12,10 +12,12 @@
     
         <a href="/portfolio.html" >Portfolio</a>
     
+
+    
 </div>
         <h1 id="projectTitle">Physics Simulation</h1>
-<div id="content">
-    <p>The aim for this coursework was to build a simple physics engine that would simulate balls, or other shapes falling down a box with different impeding layers contained within. There were two layers within the box, one which was a simple plane, and the other was a plane with holes and a propeller on it. Each of the layers could be moved out / into the box.</p>
+        <div id="content">
+            <p>The aim for this coursework was to build a simple physics engine that would simulate balls, or other shapes falling down a box with different impeding layers contained within. There were two layers within the box, one which was a simple plane, and the other was a plane with holes and a propeller on it. Each of the layers could be moved out / into the box.</p>
 
 <p>While the main focus of the coursework was the physics engine, there was a need to use a Graphics API to be able to demonstrate the physics simulation working. For this I decided to use OpenGL, while at the time I was learning DirectX 11, I felt that my experience with OpenGL would allow me to focus on the physics side. In terms of graphics each of the shapes were textured and randomly assigned a colour, both of which allowed the shapes to be easily distinguished from the rest, and to see if the shape was rotating. The box and layers were transparent.</p>
 
@@ -25,9 +27,9 @@
 
 <p>Checking each object against every other object would be very expensive and wasteful to compute. Instead when each of the dynamic objects were created they were placed into a Octree. The Octree was then used to get a list of possible collisions between each of the dynamic objects (objects in either the same cell or a neighbouring cell), which not only greatly reduced the number of collision checks, but also increased the number of objects that could be on the screen. The Octree did not include any object that were permanently on the screen, which while it did waste collision checks, I also knew that the number of permanent objects was small enough that it did not greatly affect the performance of the simulation.</p>
 
-    <hr>
-    <h2 id="title">Gallery</h2>
-    <style>
+            <hr>
+            <h2 id="title">Gallery</h2>
+            <style>
     body {
       font-family: Arial;
       margin: 0;
@@ -228,12 +230,10 @@ function showSlides(n, scroll = true) {
 </script>
 
 
-    <hr>
-    <h2 id="title">Video</h2>
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/08kLmDbMLLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div></div>
-
-
+            <hr>
+            <h2 id="title">Video</h2>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/08kLmDbMLLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div></div>
     </body>
     <script>
     </script>
