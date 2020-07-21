@@ -6,7 +6,7 @@ languages: C++, GLSL
 softwareAPI: OpenGL
 video: <iframe width="1280" height="720" src="https://www.youtube.com/embed/3yyszO3zhdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ---
-The development project looked at using the SCRUM methodology with a group project to produce a game. This game was based on the 2D arcade game Tank!
+The development project looked at using the SCRUM methodology with a group project to produce a game. This game was based on the 2D arcade game Tank! This game includes two game modes; normal and battle royal. In the normal game mode the aim is to get the highest score, and the battle royal is the last one left. The game includes powerups to change how the tanks works.
 
 I started off by working on the basic framework for the game, this included classes for using shaders / textures, rendering models and a basic game object. The basic game object class was then extended to create the different types of required game objects. While initial I had wanted to use Entity-Component-System (ECS) architecture to build the game, we ended up using a inheritence architecture as I was the only person in the team to have used ECS at that point.
 

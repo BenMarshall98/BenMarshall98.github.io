@@ -48,6 +48,14 @@ AdvancedRendering:
       title: Parametric and Spline Shapes
     - file: /assets/images/AR-Billboarding.PNG
       title: Billboarding
+DevelopmentProject:
+  images:
+    - file: /assets/images/DP-NormalGameScene.PNG
+      title: Normal Game Scene
+    - file: /assets/images/DP-BattleRoyal.PNG
+      title: Battle Royal
+    - file: /assets/images/DP-MultiplayerPowerups.PNG
+      title: Multiplayer and Powerups
 GamesArchitecture:
   images:
     - file: /assets/images/GA-Game-Start.PNG
@@ -156,3 +164,11 @@ ThreeThingGameNov18:
       title: Arrow Level
     - file: /assets/images/TTG-Portal.PNG
       title: Portal
+VirtualEnvironments:
+  images:
+    - file: /assets/images/VE-BasicScene.PNG
+      title: Basic Scene
+    - file: /assets/images/VE-Halo.PNG
+      title: Halo and Label on Object
+    - file: /assets/images/VE-SmokeParticleEffect.PNG
+      title: Smoke Effect for Teapot
