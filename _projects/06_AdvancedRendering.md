@@ -1,7 +1,7 @@
 ---
 name: Advanced Rendering
 shortname: AdvancedRendering
-shortcontect: Use advanced rendering techniques such as ray-tracing to create a historical monument site.
+shortcontent: Use advanced rendering techniques such as ray-tracing to create a historical monument site.
 languages: C++, HLSL
 softwareAPI: DirectX
 video: <iframe width="1280" height="720" src="https://www.youtube.com/embed/saED80-FoS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

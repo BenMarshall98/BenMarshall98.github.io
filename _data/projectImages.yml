@@ -92,7 +92,7 @@ MSCDisseration:
       title: Generated Navigation Mesh on Stairs
     - file: /assets/images/NavMeshOverhang.png
       title: Generated Navigation Mesh on Overhang
-    - file: /assets/images/NavMeshRegions.png
+    - file: /assets/images/NavMeshRegions.PNG
       title: Region Stage of Navigation Mesh Generation
 RealTimeGraphics:
   images:

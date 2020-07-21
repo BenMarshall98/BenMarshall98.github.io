@@ -1,0 +1,6 @@
+I"<p>The development project looked at using the SCRUM methodology with a group project to produce a game. This game was based on the 2D arcade game Tank!</p>
+
+<p>I started off by working on the basic framework for the game, this included classes for using shaders / textures, rendering models and a basic game object. The basic game object class was then extended to create the different types of required game objects. While initial I had wanted to use Entity-Component-System (ECS) architecture to build the game, we ended up using a inheritence architecture as I was the only person in the team to have used ECS at that point.</p>
+
+<p>For most of the project I worked on adding collision detection to the game. For the most part the only collision detection required was OBB-OBB, which dealt with most of the walls and tanks. However, this was extended to include ray-casting to check for line of sight (used in AI), and custom collision detection functions for rounded corners. The custom collision detection functions split the object into more basic shapes, with the collision being detected depending on which of the shapes detected a collision. With the large maps, physics started to become very slow, to deal with this I added a quick check to see if the two shapes were within a given distance.</p>
+:ET
